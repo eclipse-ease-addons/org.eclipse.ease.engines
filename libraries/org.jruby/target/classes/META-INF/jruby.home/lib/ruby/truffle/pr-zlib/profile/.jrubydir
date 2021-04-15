@@ -1,6 +1,0 @@
-..
-.
-bench_pr_zlib.rb
-bench_zlib.rb
-profile_pr_zlib_read.rb
-profile_pr_zlib_write.rb

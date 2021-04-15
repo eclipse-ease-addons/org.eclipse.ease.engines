@@ -1,9 +1,0 @@
-..
-.
-complex.rb
-etc.rb
-fcntl.rb
-fiber.rb
-openssl.rb
-stringio.rb
-weakref.rb

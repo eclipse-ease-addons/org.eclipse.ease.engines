@@ -1,9 +1,0 @@
-..
-.
-authenticator.rb
-basicauth.rb
-digestauth.rb
-htdigest.rb
-htgroup.rb
-htpasswd.rb
-userdb.rb
