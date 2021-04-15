@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.ease.engine.jython.feature"
+      label="EASE Jython Engine (Incubation)"
+      version="2.7.0.qualifier">
+
+   <description url="https://www.eclipse.org/ease/">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="%license">
+      %license
+   </license>
+
+   <plugin
+         id="org.jython"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

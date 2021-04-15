@@ -1,0 +1,15 @@
+..
+.
+bigdecimal.rb
+complex.rb
+core.rb
+date.rb
+date_time.rb
+exception.rb
+ostruct.rb
+range.rb
+rational.rb
+regexp.rb
+struct.rb
+symbol.rb
+time.rb

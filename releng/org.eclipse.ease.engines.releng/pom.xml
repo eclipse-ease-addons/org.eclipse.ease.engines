@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eclipse.ease.engines</groupId>
+	<artifactId>org.eclipse.ease.engines.releng</artifactId>
+	<version>0.5.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<prerequisites>
+		<!-- Maven 3.1.0 is the earliest version using Eclipse Aether, Maven 3.0.x 
+			uses the incompatible predecessor Sonatype Aether -->
+		<maven>3.6.3</maven>
+	</prerequisites>
+
+	<properties>
+		<!-- used plugin versions -->
+		<tycho.version>2.2.0</tycho.version>
+		<tycho.extras.version>${tycho.version}</tycho.extras.version>
+
+		<!-- build parameters -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+
+	<build>
+		<plugins>
+			<!-- enable tycho build extension -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<!-- enable pom version updates: to update execute goal "tycho.versions:update-pom" -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-versions-plugin</artifactId>
+				<version>${tycho.version}</version>
+			</plugin>
+
+			<!-- timestamps based on the latest git commit -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.eclipse.tycho.extras</groupId>
+						<artifactId>tycho-buildtimestamp-jgit</artifactId>
+						<version>${tycho.extras.version}</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<timestampProvider>jgit</timestampProvider>
+					<jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
+					<jgit.ignore>
+						pom.xml
+					</jgit.ignore>
+					<format>${build-prefix}yyyyMMddHHmm</format>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+	<modules>
+
+		<!-- engines -->
+		<module>../../libraries/org.jython</module>
+		<module>../../libraries/org.codehaus.groovy</module>
+		<module>../../libraries/org.jruby</module>
+
+		<!-- features -->
+		<module>../../features/org.eclipse.ease.engine.jython.feature</module>
+		<module>../../features/org.eclipse.ease.engine.groovy.feature</module>
+		<module>../../features/org.eclipse.ease.engine.jruby.feature</module>
+
+		<!-- releng -->
+		<module>../org.eclipse.ease.engines.releng.p2</module>
+	</modules>
+
+
+	<profiles>
+		<profile>
+			<id>local</id>
+		</profile>
+
+		<profile>
+			<!-- by default set build qualifier to "I" -->
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>!build-prefix</name>
+				</property>
+			</activation>
+
+			<properties>
+				<build-prefix>'I'</build-prefix>
+			</properties>
+		</profile>
+	</profiles>
+</project>  
+  

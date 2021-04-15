@@ -1,0 +1,13 @@
+..
+.
+bin
+certs
+CHANGES
+examples
+lib
+MANIFEST
+pr-zlib.gemspec
+profile
+Rakefile
+README
+test

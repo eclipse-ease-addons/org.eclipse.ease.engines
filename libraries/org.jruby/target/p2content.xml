@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.jruby' version='9.0.5.I202104151002' singleton='false' generation='2'>
+    <update id='org.jruby' range='[0.0.0,9.0.5.I202104151002)' severity='0'/>
+    <properties size='4'>
+      <property name='org.eclipse.equinox.p2.name' value='JRuby Embeddable'/>
+      <property name='maven-groupId' value='org.eclipse.ease.engines'/>
+      <property name='maven-artifactId' value='org.jruby'/>
+      <property name='maven-version' value='9.0.5-SNAPSHOT'/>
+    </properties>
+    <provides size='5'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.jruby' version='9.0.5.I202104151002'/>
+      <provided namespace='osgi.bundle' name='org.jruby' version='9.0.5.I202104151002'/>
+      <provided namespace='java.package' name='org.jruby.embed' version='0.0.0'/>
+      <provided namespace='osgi.identity' name='org.jruby' version='9.0.5.I202104151002'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='1'>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+        <description>
+          org.jruby
+        </description>
+      </requiredProperties>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.jruby' version='9.0.5.I202104151002'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.jruby&#xA;Bundle-Version: 9.0.5.I202104151002&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

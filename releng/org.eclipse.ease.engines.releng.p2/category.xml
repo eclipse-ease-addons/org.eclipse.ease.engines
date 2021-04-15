@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.eclipse.ease.engine.jython.feature" version="2.7.0.qualifier">
+      <category name="ease_engines"/>
+   </feature>
+   <feature url="features/org.eclipse.ease.engine.groovy.feature_2.4.6.qualifier.jar" id="org.eclipse.ease.engine.groovy.feature" version="2.4.6.qualifier">
+      <category name="ease_engines"/>
+   </feature>
+   <feature url="features/org.eclipse.ease.engine.jruby.feature_9.0.5.qualifier.jar" id="org.eclipse.ease.engine.jruby.feature" version="9.0.5.qualifier">
+      <category name="ease_engines"/>
+   </feature>
+   <category-def name="ease_engines" label="EASE Engines">
+      <description>
+         Additional scripting engines binaries for EASE. Needs an additional engine adapter from the main update site to work.
+      </description>
+   </category-def>
+</site>

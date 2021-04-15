@@ -1,0 +1,12 @@
+..
+.
+jar-dependencies-0.2.3.gemspec
+jruby-openssl-0.9.15-java.gemspec
+json-1.8.0-java.gemspec
+minitest-5.4.1.gemspec
+power_assert-0.2.3.gemspec
+psych-2.0.15-java.gemspec
+racc-1.4.13-java.gemspec
+rake-10.1.0.gemspec
+rdoc-4.1.2.gemspec
+test-unit-3.0.3.gemspec

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JRuby Embeddable
+Bundle-SymbolicName: org.jruby
+Bundle-Version: 9.0.5.I202104151002
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BuddyPolicy: global
+Export-Package: org.jruby.embed
+

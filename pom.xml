@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<inceptionYear>2016</inceptionYear>
+	<url>https://github.com/eclipse-ease-addons/org.eclipse.ease.engines</url>
+	<organization>
+		<name>Eclipse Foundation</name>
+		<url>http://www.eclipse.org/</url>
+	</organization>
+	<developers>
+		<developer>
+			<name>Christian Pontesegger</name>
+			<organization>private</organization>
+			<organizationUrl></organizationUrl>
+		</developer>
+	</developers>
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+	<name>EASE additional engines</name>
+	<description>Engines for EASE that we cannot host on eclipse.org directly.</description>
+  
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eclipse.ease.engines</groupId>
+	<artifactId>ease.engines</artifactId>
+	<version>0.4.0-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>releng/org.eclipse.ease.engines.releng</module>
+	</modules>
+</project>  

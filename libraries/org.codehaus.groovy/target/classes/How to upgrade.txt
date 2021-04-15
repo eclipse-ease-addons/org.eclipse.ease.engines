@@ -1,0 +1,6 @@
+How to upgrade groovy versions:
+
+* download the latest binary zip from http://www.groovy-lang.org/download.html
+* extract *.zip/groovy-<version>/embeddable/groovy-all-<version>-indy.jar
+* create new plug-in from existing jar
+ 

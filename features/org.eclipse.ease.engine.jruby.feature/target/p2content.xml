@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='2'>
+  <unit id='org.eclipse.ease.engine.jruby.feature.feature.group' version='9.0.5.I202104151002' singleton='false'>
+    <update id='org.eclipse.ease.engine.jruby.feature.feature.group' range='[0.0.0,9.0.5.I202104151002)' severity='0'/>
+    <properties size='7'>
+      <property name='org.eclipse.equinox.p2.name' value='EASE JRuby Engine (Incubation)'/>
+      <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+      <property name='org.eclipse.equinox.p2.description.url' value='https://www.eclipse.org/ease/'/>
+      <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      <property name='maven-groupId' value='org.eclipse.ease.engines'/>
+      <property name='maven-artifactId' value='org.eclipse.ease.engine.jruby.feature'/>
+      <property name='maven-version' value='9.0.5-SNAPSHOT'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ease.engine.jruby.feature.feature.group' version='9.0.5.I202104151002'/>
+    </provides>
+    <requires size='2'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.jruby' range='[9.0.5.I202104151002,9.0.5.I202104151002]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ease.engine.jruby.feature.feature.jar' range='[9.0.5.I202104151002,9.0.5.I202104151002]'>
+        <filter>
+          (org.eclipse.update.install.features=true)
+        </filter>
+      </required>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+    <licenses size='1'>
+      <license uri='https://raw.githubusercontent.com/jruby/jruby/master/LICENSE.RUBY' url='https://raw.githubusercontent.com/jruby/jruby/master/LICENSE.RUBY'>
+        JRuby distributes some ruby modules which are distributed under Ruby&#xA;license:&#xA;&#xA;Ruby is copyrighted free software by Yukihiro Matsumoto &lt;matz@netlab.jp&gt;.&#xA;You can redistribute it and/or modify it under either the terms of the&#xA;2-clause BSDL (see the file BSDL), or the conditions below:&#xA;&#xA;  1. You may make and give away verbatim copies of the source form of the&#xA;     software without restriction, provided that you duplicate all of the&#xA;     original copyright notices and associated disclaimers.&#xA;&#xA;  2. You may modify your copy of the software in any way, provided that&#xA;     you do at least ONE of the following:&#xA;&#xA;       a) place your modifications in the Public Domain or otherwise&#xA;          make them Freely Available, such as by posting said&#xA;   modifications to Usenet or an equivalent medium, or by allowing&#xA;   the author to include your modifications in the software.&#xA;&#xA;       b) use the modified software only within your corporation or&#xA;          organization.&#xA;&#xA;       c) give non-standard binaries non-standard names, with&#xA;          instructions on where to get the original software distribution.&#xA;&#xA;       d) make other distribution arrangements with the author.&#xA;&#xA;  3. You may distribute the software in object code or binary form,&#xA;     provided that you do at least ONE of the following:&#xA;&#xA;       a) distribute the binaries and library files of the software,&#xA;   together with instructions (in the manual page or equivalent)&#xA;   on where to get the original distribution.&#xA;&#xA;       b) accompany the distribution with the machine-readable source of&#xA;   the software.&#xA;&#xA;       c) give non-standard binaries non-standard names, with&#xA;          instructions on where to get the original software distribution.&#xA;&#xA;       d) make other distribution arrangements with the author.&#xA;&#xA;  4. You may modify and include the part of the software into any other&#xA;     software (possibly commercial).  But some files in the distribution&#xA;     are not written by the author, so that they are not under these terms.&#xA;&#xA;     For the list of those files and their copying conditions, see the&#xA;     file LEGAL.&#xA;&#xA;  5. The scripts and library files supplied as input to or produced as&#xA;     output from the software do not automatically fall under the&#xA;     copyright of the software, but belong to whomever generated them,&#xA;     and may be sold commercially, and may be aggregated with this&#xA;     software.&#xA;&#xA;  6. THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR&#xA;     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED&#xA;     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR&#xA;     PURPOSE.
+      </license>
+    </licenses>
+    <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+      [Enter Copyright Description here.]
+    </copyright>
+  </unit>
+  <unit id='org.eclipse.ease.engine.jruby.feature.feature.jar' version='9.0.5.I202104151002'>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='EASE JRuby Engine (Incubation)'/>
+      <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+      <property name='org.eclipse.equinox.p2.description.url' value='https://www.eclipse.org/ease/'/>
+      <property name='maven-groupId' value='org.eclipse.ease.engines'/>
+      <property name='maven-artifactId' value='org.eclipse.ease.engine.jruby.feature'/>
+      <property name='maven-version' value='9.0.5-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ease.engine.jruby.feature.feature.jar' version='9.0.5.I202104151002'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+      <provided namespace='org.eclipse.update.feature' name='org.eclipse.ease.engine.jruby.feature' version='9.0.5.I202104151002'/>
+    </provides>
+    <filter>
+      (org.eclipse.update.install.features=true)
+    </filter>
+    <artifacts size='1'>
+      <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ease.engine.jruby.feature' version='9.0.5.I202104151002'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='zipped'>
+          true
+        </instruction>
+      </instructions>
+    </touchpointData>
+    <licenses size='1'>
+      <license uri='https://raw.githubusercontent.com/jruby/jruby/master/LICENSE.RUBY' url='https://raw.githubusercontent.com/jruby/jruby/master/LICENSE.RUBY'>
+        JRuby distributes some ruby modules which are distributed under Ruby&#xA;license:&#xA;&#xA;Ruby is copyrighted free software by Yukihiro Matsumoto &lt;matz@netlab.jp&gt;.&#xA;You can redistribute it and/or modify it under either the terms of the&#xA;2-clause BSDL (see the file BSDL), or the conditions below:&#xA;&#xA;  1. You may make and give away verbatim copies of the source form of the&#xA;     software without restriction, provided that you duplicate all of the&#xA;     original copyright notices and associated disclaimers.&#xA;&#xA;  2. You may modify your copy of the software in any way, provided that&#xA;     you do at least ONE of the following:&#xA;&#xA;       a) place your modifications in the Public Domain or otherwise&#xA;          make them Freely Available, such as by posting said&#xA;   modifications to Usenet or an equivalent medium, or by allowing&#xA;   the author to include your modifications in the software.&#xA;&#xA;       b) use the modified software only within your corporation or&#xA;          organization.&#xA;&#xA;       c) give non-standard binaries non-standard names, with&#xA;          instructions on where to get the original software distribution.&#xA;&#xA;       d) make other distribution arrangements with the author.&#xA;&#xA;  3. You may distribute the software in object code or binary form,&#xA;     provided that you do at least ONE of the following:&#xA;&#xA;       a) distribute the binaries and library files of the software,&#xA;   together with instructions (in the manual page or equivalent)&#xA;   on where to get the original distribution.&#xA;&#xA;       b) accompany the distribution with the machine-readable source of&#xA;   the software.&#xA;&#xA;       c) give non-standard binaries non-standard names, with&#xA;          instructions on where to get the original software distribution.&#xA;&#xA;       d) make other distribution arrangements with the author.&#xA;&#xA;  4. You may modify and include the part of the software into any other&#xA;     software (possibly commercial).  But some files in the distribution&#xA;     are not written by the author, so that they are not under these terms.&#xA;&#xA;     For the list of those files and their copying conditions, see the&#xA;     file LEGAL.&#xA;&#xA;  5. The scripts and library files supplied as input to or produced as&#xA;     output from the software do not automatically fall under the&#xA;     copyright of the software, but belong to whomever generated them,&#xA;     and may be sold commercially, and may be aggregated with this&#xA;     software.&#xA;&#xA;  6. THIS SOFTWARE IS PROVIDED &quot;AS IS&quot; AND WITHOUT ANY EXPRESS OR&#xA;     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED&#xA;     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR&#xA;     PURPOSE.
+      </license>
+    </licenses>
+    <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+      [Enter Copyright Description here.]
+    </copyright>
+  </unit>
+</units>
